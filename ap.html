@@ -1,5 +1,72 @@
-<h1>
-    Andhra 
-    Pradesh
-</h1>
-<a href="index.html">Back</a>
+<html>
+
+<head>
+
+        <title>
+                Andhra Pradesh
+        </title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="maha.html">Maharashtra</a></li>
+                <li><a href="ker.html">Kerela</a></li>
+                <li><a href="kar.html">Karnataka</a></li>
+                <li><a href="tn.html">Tamil Nadu</a></li>
+
+        </ul>
+
+        <h1>
+                Andhra Pradesh
+        </h1>
+
+        <div class="container">
+                <div class="rectangle1">
+
+                        <p style="font-size:25;text-align:center ">Total Confirmed Cases:</p>
+                        <p style="font-size:25;text-align:center " id="total">loading...</p>
+                </div>
+
+                <div class="rectangle2">
+                        <p style="font-size:25;text-align:center ">Total Number of Deaths:</p>
+                        <p style="font-size:25;text-align:center " id="deaths">loading...</p>
+                </div>
+
+                <div class="rectangle3">
+                        <p style="font-size:25;text-align:center ">Total Discharged Cases:</p>
+                        <p style="font-size:25;text-align:center " id="discharg">loading...</p>
+                </div>
+
+        </div>
+        <div>
+
+        </div>
+
+</body>
+<script>
+
+        async function fetchText() {
+                let response = await fetch('https://api.rootnet.in/covid19-in/stats/latest');
+
+                if (response.status === 200) {
+                        let data = await response.json();
+                        // handle data
+                        console.log(data['data']['regional'][2])
+                        console.log("Deaths", data['data']['regional'][2]['deaths'])
+                        console.log("discharged", data['data']['regional'][2]['discharged'])
+                        console.log("confirmedCasesIndian", data['data']['regional'][2]['confirmedCasesIndian'])
+                        document.getElementById('discharg').innerHTML = data['data']['regional'][2]['discharged']
+                        document.getElementById('total').innerHTML = data['data']['regional'][2]['confirmedCasesIndian']
+                        document.getElementById('deaths').innerHTML = data['data']['regional'][2]['deaths']
+                }
+
+        }
+
+        fetchText();
+
+</script>
+
+</html>

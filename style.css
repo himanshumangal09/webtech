@@ -1,0 +1,70 @@
+h1 {
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  
+}
+
+.rectangle1 {
+  float: left;
+  width: 180px;
+  height: 160px;
+  background-color: white;
+  background-color: rgb(129, 213, 247);
+  text-align: center;
+}
+
+.rectangle2 {
+  float: left;
+  width: 180px;
+  height: 160px;
+  margin-left: 20px;
+  background-color: rgb(248, 118, 118);
+  text-align: center;
+}
+
+.rectangle3 {
+  float: right;
+  width: 180px;
+  height: 160px;
+  background-color: rgb(162, 236, 162);
+}
+
+.container {
+  width: 600px;
+  height: 190px;
+  padding-top: 10%;
+  padding-left: 30%;
+  padding-right: 15%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6114c5;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #b88af3;
+}
+h3{
+  margin-left: 350px;
+  z-index: 2;
+}

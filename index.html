@@ -6,6 +6,7 @@
 <style>
     body {
         background: #fffffa;
+        overflow-y: hidden;
     }
 
     img {
@@ -26,10 +27,24 @@
         text-align: center;
         text-decoration: underline;
     }
-
+    .h22 {
+        padding: 10px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+        font-size: 30px;
+        margin: 0;
+        
+      }
+      
     image {
-        border: 2px solid black;
+        border: 2px solid rgb(0, 0, 0);
+        
     }
+    img:hover {
+        opacity: 0.5;
+        box-shadow: 0 0 2px 2px #1abc9c;
+      }
 
     .bottom-left {
         position: absolute;
@@ -38,15 +53,29 @@
         float: left;
         width: 50%;
     }
-
-    .circle {
-        height: 140px;
-        width: 1190px;
-        background-color: black;
-        border-radius: 100;
-
+    a{
+        text-decoration:none;
+        color: #1abc9c;
     }
+
 </style>
+<!-- <style>
+    body {
+            background-image: url('ccc.jpg');
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+    }
+    .h22,p{
+        text-decoration: white;
+        color:#fffffa;
+        }
+    ul{
+        color:#fffffa;
+    }
+</style> -->
 
 <body>
 
@@ -70,55 +99,56 @@
 
     </map>
     <div>
-        
+
         <p>
             Here’s a look at these states which have the highest number of active Covid-19 cases in India:
 
         <ul>
             <ol>
-                <b>1. Maharashtra:</b> The southern state is the only one with more than 60,000 active Covid-19 cases in the
-                country. It has reported 760,933 cases thus far. This means that active cases contribute 8.60% of
-                Kerala’s total confirmed cases. Also, more than 3,000 people have succumbed to the disease in Kerala,
-                the country’s fifth worst-hit state.
+                <b ><a href="maha.html">1. Maharashtra:</a></b> The pace of new cases of corona virus in Maharashtra is not taking its name.
+                Thousands of new infections are being reported every day. Mumbai also has the highest number of
+                new Corona cases reported so far. On the other hand, night curfew has also been implemented in the state
+                to ban Corona.
             </ol>
             <br>
             <ol>
-               <b>
-                2. Kerala:
-               </b>  With nearly 2 million Covid-19 cases, Maharashtra’s tally is nearly twice of the second
-                worst-affected state, Karnataka. Active cases at 54,045 contribute 2.80% of the western state’s overall
-                caseload.
+                <b>
+                   <a href="ker.html">2. Kerala:</a>
+                </b> Five months on since the country’s first positive case of Novel Coronavirus Disease (COVID-19) was
+                reported in Kerala, the state with over a population of 35 million, has reported 4189 cases of COVID-19
+                as on 30 June 2020 and 23 deaths with an impressive recovery rate of 51.7%.
 
             </ol>
             <br>
             <ol>
                 <b>
-                    3. Karnataka: 
+                 <a href="ker.html"> 3. Karnataka:</b></a>
                 </b>
-                The country’s most populous state, with a population of over 200 million, has reported
-                nearly 600,000 Covid-19 cases till now. A total of 14,260 active cases means there are 2.43% active
-                cases in the state currently.
+                With Karnataka now reporting more than 2,500 Covid-19 cases a day, experts have warned that the second
+                wave could be severe. Health minister K Sudhakar also expressed concerns about the surge on Saturday. As
+                the number of Covid-19 cases surge in Bengaluru, more young children are turning positive.
 
             </ol>
 
             <br>
             <ol>
                 <b>
-                    4. Andhra Pradesh: 
+                    <a href="ap.html"> 4. Andhra Pradesh: </a>
                 </b>
-               The eastern state, whose handling of the Covid-19 pandemic has been a friction point
-                between the Centre and the state government, has logged more than 550,000 cases thus far. A total of
-                11,985 active cases contribute 2.17% of the state’s total Covid-19 cases.
+                which has a population of 53 million, reported its first COVID-19 case in March. One of the early states
+                to invoke the Indian Epidemic Diseases Act (1987), A.P. has documented 6,87,351 cases as of September
+                29, 2020. Despite the rising numbers, it has maintained a Case Fatality Rate of 0.84, one of the lowest
+                in the country
 
             </ol>
             <br>
             <ol>
                 <b>
-                    5. Tamil Nadu:
+                    <a href="tn.html">5. Tamil Nadu:</a>
                 </b>
-
-                The central state has nearly 280,000 cases of Covid-19 of which 11,435 are active. This
-                gives Chhattisgarh 4.09% active cases of its total tally.
+                The Tamil Nadu government’s strategy to combat the spread of COVID-19 and its integrated approach to
+                treating those affected are better than the measures adopted by most other States, Health Minister C.
+                Vijayabaskar
 
             </ol>
             <br>
@@ -133,11 +163,3 @@
 </body>
 
 </html>
-<!-- scropt to get position -->
-<script type="text/javascript">
-    document.addEventListener('mousemove', (event) => {
-        console.log(`Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`);
-        //  alert(`Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`)
-        document.getElementById("teext").innerText = `Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`
-    });
-</script>
